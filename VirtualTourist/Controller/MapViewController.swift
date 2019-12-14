@@ -14,6 +14,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     
     var fetchedResultsController: NSFetchedResultsController<Pin>!
 
+
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
@@ -32,6 +33,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     
     deinit {
         fetchedResultsController = nil
+    }
+    
+    @IBAction func deleteAllPins(_ sender: Any) {
+        mapView.removeAnnotations(mapView.annotations)
     }
     
     func setupView() {

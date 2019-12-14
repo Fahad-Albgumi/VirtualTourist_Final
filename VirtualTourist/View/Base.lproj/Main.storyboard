@@ -47,7 +47,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="exQ-8K-G9Y"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Virtual Tourist" id="Qtn-h2-fOn"/>
+                    <navigationItem key="navigationItem" title="Virtual Tourist" id="Qtn-h2-fOn">
+                        <barButtonItem key="rightBarButtonItem" title="Delete Pins" id="bVb-u3-Xa6">
+                            <connections>
+                                <action selector="deleteAllPins:" destination="MdL-mZ-fzP" id="1hX-Tx-jXi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="31A-ZU-BzV" id="veH-eJ-SCd"/>
                     </connections>
@@ -90,7 +96,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="UDc-9x-Yss" customClass="PhotoCell" customModule="Virtual_Tourist" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="UDc-9x-Yss" customClass="PhotoCell" customModule="VirtualTourist" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="99"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
